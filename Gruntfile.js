@@ -288,8 +288,5 @@ module.exports = function (grunt) {
   grunt.registerTask('dist', ['build', 'compress', 'copy-docs']);
 
   // Default task.
-  grunt.registerTask('default', 'build');
-
-  // Linting
-  grunt.registerTask('lint', 'eslint');
+  grunt.registerTask('default', ['build-css', 'build-js']);
 };

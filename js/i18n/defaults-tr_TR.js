@@ -2,7 +2,7 @@
  * Translated default messages for bootstrap-select.
  * Locale: TR (Turkey)
  * Region: TR (Europe)
- * Author: Serhan Güney & Mehmet Emre Kutluca
+ * Author: Serhan Güney
  */
 (function ($) {
   $.fn.selectpicker.defaults = {
@@ -18,7 +18,7 @@
       ];
     },
     selectAllText: 'Tümünü Seç',
-    deselectAllText: 'Tüm Seçimleri Kaldır',
+    deselectAllText: 'Seçiniz',
     multipleSeparator: ', '
   };
 })(jQuery);

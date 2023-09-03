@@ -18,7 +18,7 @@ select.selectpicker {
 }
 
 .bootstrap-select {
-  width: 220px;
+  width: 220px \0; /*IE9 and below*/
   vertical-align: middle;
 
   // The selectpicker button
@@ -259,31 +259,6 @@ select.selectpicker {
       margin-top: -2px;
       vertical-align: middle;
     }
-
-    .bs-select-clear-selected {
-      position: relative;
-      display: block;
-      margin-right: 5px;
-      text-align: center;
-
-      .bs3& {
-        padding-right: inherit;
-      }
-
-      span {
-        position: relative;
-        top: calc(((-1em / 1.5) + 1ex) / 2);
-        pointer-events: none;
-
-        .bs3& {
-          top: auto;
-        }
-      }
-    }
-
-    &.bs-placeholder .bs-select-clear-selected {
-      display: none;
-    }
   }
 
   .input-group &.form-control .dropdown-toggle {
@@ -500,12 +475,8 @@ select.selectpicker {
   width: 100%;
   box-sizing: border-box;
 
-  & .btn-group {
-    display: block;
-
-    & button {
-      width: 50%;
-    }
+  & .btn-group button {
+    width: 50%;
   }
 }
 
@@ -514,12 +485,8 @@ select.selectpicker {
   width: 100%;
   box-sizing: border-box;
 
-  & .btn-group {
-    display: block;
-
-    & button {
-      width: 100%;
-    }
+  & .btn-group button {
+    width: 100%;
   }
 }
 
